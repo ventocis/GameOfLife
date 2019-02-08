@@ -1,7 +1,7 @@
 #include "life.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+//checkcheck
 /*
  * get_grid creates new memory for a "grid".
  * x is the height and y is the width.
