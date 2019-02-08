@@ -7,7 +7,7 @@
  * x is the height and y is the width.
  */
 char** get_grid(int x, int y){
-
+//howdy
 }
 
 /*
