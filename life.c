@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 //checkcheck
+//
+//mic check
 /*
  * get_grid creates new memory for a "grid".
  * x is the height and y is the width.
