@@ -1,15 +1,29 @@
 #include "life.h"
 #include <stdio.h>
 #include <stdlib.h>
-//checkcheck
-//
-//mic check
+
+
 /*
  * get_grid creates new memory for a "grid".
  * x is the height and y is the width.
  */
 char** get_grid(int x, int y){
+	char** grid = (char**)malloc(y * sizeof(char*));
+	for (int w=0; w<y; w++) 
+		grid[w] =(char*)malloc(x * sizeof(char));
 
+	for (int h=0; h<x; h++)
+		for (int w=0; w<y; w++)
+			grid[h][w] = '0';
+
+	for (int h=0; h<x; h++) {
+		for (int w=0; w<y; w++){
+			printf("%c\t", grid[h][w]);
+		}
+		printf("\n");
+	}
+
+	return grid;	
 }
 
 /*
