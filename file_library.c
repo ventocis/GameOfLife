@@ -19,5 +19,9 @@ size_t read_file(char* file_name, char** contents){
 
 /* write_file writes a string of bytes to disk */
 size_t write_file(char* file_name, char* contents, size_t size){
-
+	FILE* file = fopen(file_name, "w");
+	for (int i = 0; i < size; i++)
+		fputs(contents, file);
+	fclose(file);
+	return size;
 }
