@@ -36,7 +36,6 @@ char** get_grid(int x, int y){
 void print_grid(int x, int y, char** grid){
 	for (int h=0; h<x; h++) {
 		for (int w=0; w<y; w++){ 
-			//FIX
 			printf("%c  ", grid[h][w]);
 
 		}
