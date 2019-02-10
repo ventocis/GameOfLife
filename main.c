@@ -1,4 +1,4 @@
-/*delete
+/*
  * Game of Life
  * 
  * A version of John Conway's classic Game of Life, written in C.

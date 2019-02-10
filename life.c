@@ -41,12 +41,12 @@ void print_grid(int x, int y, char** grid){
  * is returned.
  */
 char** mutate(int x, int y, char** grid){
-
+	return grid;
 }
 
 /* get_neighbors is a helper method that returns
  * the number of live neighbors a cell has.
  */
 int get_neighbors(int i, int j, int x, int y, char** grid){
-
+	return 1;
 }
