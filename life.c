@@ -16,9 +16,11 @@ char** get_grid(int x, int y){
 		for (int w=0; w<y; w++)
 			grid[h][w] = '0';
 
+
+	// REMOVE AFTER TESTING
 	for (int h=0; h<x; h++) {
 		for (int w=0; w<y; w++){
-			printf("%c\t", grid[h][w]);
+			printf("%c  ", grid[h][w]);
 		}
 		printf("\n");
 	}
@@ -32,8 +34,16 @@ char** get_grid(int x, int y){
  * provided by grid
  */
 void print_grid(int x, int y, char** grid){
+	for (int h=0; h<x; h++) {
+		for (int w=0; w<y; w++){ 
+			//FIX
+			//printf("c  ", &grid[h][w]);
 
+		}
+		printf("\n");
+	}
 }
+
 
 /*
  * mutate takes a grid and mutates that grid
