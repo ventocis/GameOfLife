@@ -57,5 +57,33 @@ char** mutate(int x, int y, char** grid){
  * the number of live neighbors a cell has.
  */
 int get_neighbors(int i, int j, int x, int y, char** grid){
-	return 1;
+	int neighors = 0;
+	
+	// Check western neighbor
+	if (grid[i][[j+1)%y] == '1')
+		    neighbors++;
+	
+	// Check eastern neighbor
+	// If location is at the left, check the right of the board.
+	if (j==0)
+		    if (grid[i][y-1] == '1')
+		    	neighbors++;
+	else 
+		    if (grid[i][j-1] == '1')
+		    	neighbors++;
+		    
+	// Check southern neighbor 
+	if (grid[(i+1)%1][j] == '1')
+		    neighbors++;
+		    
+	// Check northern neighbor
+	// If location is at the top, check the bottom of the board.
+	if (i==0)
+		if (grid[x-1][j] == '1')
+		    neighbors++;
+	else
+		if (grid[i-1][j] == '1')
+		    neighbors++;
+		    		    
+	return neighbors;
 }
