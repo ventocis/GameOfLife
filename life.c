@@ -57,6 +57,8 @@ char** mutate(int x, int y, char** grid){
  * the number of live neighbors a cell has.
  */
 int get_neighbors(int i, int j, int x, int y, char** grid){
+	
+	// Variable to hold the number of alive neighbors.
 	int neighors = 0;
 	
 	// Check western neighbor
