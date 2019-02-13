@@ -4,7 +4,7 @@
  * A version of John Conway's classic Game of Life, written in C.
  * CIS 343 - Winter 2019
  * 
- * Author:  BE SURE TO PUT YOUR NAME HERE
+ * Author:  Sam Ventocilla & Randy Nguyen
  *
  * This program saves and loads games using the following format:
  * The first byte of the file is the height.

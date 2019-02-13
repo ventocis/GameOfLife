@@ -92,3 +92,9 @@ int get_neighbors(int i, int j, int x, int y, char** grid){
 	}	    		    
 	return neighbors;
 }
+
+int onBoard(int i, int j, int x, int y){
+	if(i >= x || i < 0 || j < 0 || j >= y)
+		return 0;
+	return 1;
+}
