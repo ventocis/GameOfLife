@@ -7,7 +7,7 @@
  * get_grid creates new memory for a "grid".
  * x is the height and y is the width.
  */
-char** get_grid(int x, int y){
+char** get_grid(int x, int y)
 	char** grid = (char**)malloc(y * sizeof(char*));
 	for (int w=0; w<y; w++) 
 		grid[w] =(char*)malloc(x * sizeof(char));
@@ -61,8 +61,18 @@ int get_neighbors(int i, int j, int x, int y, char** grid){
 	// Variable to hold the number of alive neighbors.
 	int neighbors = 0;
 	
+	for(int a = -1; a < 2; a++){
+		for(int b = -1; b < 2; b++){
+			if(onBoard(i+a,j+b,x,y) == 1)
+				if(grid[i+a][j+b] == '1')
+					neighbors++;
+		}
+	}
+
+/**
+
 	// Check western neighbor
-	if (grid[i][(j+1)%y] == '1')
+	if (grid[i][(j+1)y] == '1')
 		    neighbors++;
 	
 	// Check eastern neighbor
@@ -89,7 +99,7 @@ int get_neighbors(int i, int j, int x, int y, char** grid){
 	else{
 		if (grid[i-1][j] == '1')
 		    neighbors++;
-	}	    		    
+	}	**/    		    
 	return neighbors;
 }
 
