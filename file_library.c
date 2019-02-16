@@ -1,3 +1,9 @@
+/**********************************************************************
+ * Filename: file_library.c
+ *
+ * Students: Randy Nguyen and Sam Ventocilla
+ *********************************************************************/
+
 #include "file_library.h"
 #include <stdio.h>
 #include <sys/types.h>
